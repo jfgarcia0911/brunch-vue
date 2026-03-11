@@ -45,29 +45,29 @@ export default {
       :style="{ backgroundImage: `url(/booking-form-bg.png)` }"
       class="flex bg-cover bg-center h-220 w-full"
     ></div>
-    <div class="h-112 bg-darkgray w-full  text-white">
-      <div class="w-292 justify-center mx-auto">
+    <div class="h-112 bg-darkgray w-full justify-center flex text-white">
+      <div class="w-292 justify-center ">
         <div>
           <div class="flex justify-center">
-            <h1 class="font-[Cookie] text-[77.11px] text-center mt-5">Book here</h1>
+            <h1 class="font-[Cookie] text-[77.11px]  mt-5">Book here</h1>
           </div>
         </div>
-        <div class="flex flex-wrap justify-center">
+        <div class="flex flex-wrap justify-center mx-4">
           <div
             v-for="(item, index) in items"
             :key="index"
-            class="font-bold text-[16.67px] md:w-1/2 lg:w-1/3 mb-9 flex justify-center"
+            class="font-bold text-sm md:text-[16.67px] w-1/3 mb-9 flex justify-center"
           >
             <div>
               <h1>{{ item.title }}</h1>
-              <div class="border rounded-lg flex items-center justify-between px-2 mt-1 w-60">
-                <h2 class="">{{ item.subTitle }}</h2>
+              <div class="border rounded-lg flex items-center justify-between px-2 mt-1 w-35 md:w-60">
+                <h2 class="text-xs py-1 md:text-[16.67px]">{{ item.subTitle }}</h2>
                 <img v-if="item.image" :src="item.image" alt="Polygon" />
               </div>
             </div>
           </div>
           <div>
-            <button class="border w-60 rounded-lg font-bold text-[16.67px] mt-4">SUBMIT</button>
+            <button class="border w-40 md:w-60 rounded-lg font-bold text-sm md:text-[16.67px] mt-4">SUBMIT</button>
           </div>
         </div>
       </div>
