@@ -16,9 +16,10 @@
       </div>
     </div>
     <div class="bg-white h-94">
-      <div class="flex justify-center">
-        <!-- Card -->
-        <div class="w-72 mt-10" v-for="(item, index) in items" :key="index">
+      <div class="flex justify-center ">
+        <div class="flex justify-between w-270">
+          <!-- Card -->
+        <div class="w-67 mt-10" v-for="(item, index) in items" :key="index">
           <div class="flex gap-1 mt-15">
             <div v-for="n in item.circles" :key="n" class="bg-darkgray h-8 w-8 rounded-full"></div>
           </div>
@@ -27,6 +28,7 @@
             {{item.text}}
           </p>
         </div  >
+        </div>
       </div>
     </div>
   </section>

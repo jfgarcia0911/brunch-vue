@@ -6,6 +6,8 @@ import IndianFlavours from './components/IndianFlavours.vue';
 import MenuList from './components/MenuList.vue';
 import NewMenu from './components/NewMenu.vue';
 import BookingForm from './components/BookingForm.vue';
+import FooterMenu from './components/FooterMenu.vue';
+import Footer from './components/Footer.vue';
 </script>
 
 <template>
@@ -16,6 +18,8 @@ import BookingForm from './components/BookingForm.vue';
       <MenuList/>
       <NewMenu/>
       <BookingForm/>
+      <FooterMenu/>
+      <Footer/>
 
   </header>
 
