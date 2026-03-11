@@ -10,16 +10,17 @@ const toggleMenu = () => {
 </script>
 
 <template>
-  <nav class="text-white text-[35.02px] absolute top-5 w-full">
-    <div class=" mx-auto w-300">
-      <div class="flex justify-between items-center font-bold">
+  <nav class="text-white text-xl md:text-[35.02px] absolute top-5 w-full">
+    <div class="flex justify-center">
+      <div class="w-292 px-4">
+        <div class="flex justify-between items-center font-bold">
         <!-- Logo / Brand -->
         <div class="shrink-0">
-          <h1 class=" font-bold ">BRUNCH</h1>
+          <h1 class=" font-bold z-50">BRUNCH</h1>
         </div>
 
         <!-- Desktop Navigation -->
-        <div class="hidden md:flex space-x-3">
+        <div class="hidden lg:flex">
           <a href="#" class=" hover:text-gray-900 px-3 py-2 ">WELCOME</a>
           <a href="#" class=" hover:text-gray-900 px-3 py-2  ">MENU</a>
           <a href="#" class=" hover:text-gray-900 px-3 py-2  ">EVENTS</a>
@@ -27,7 +28,7 @@ const toggleMenu = () => {
         </div>
 
         <!-- Mobile menu button -->
-        <div class="flex md:hidden">
+        <div class="flex lg:hidden  text-white z-50">
           <button
             @click="toggleMenu"
             type="button"
@@ -62,15 +63,19 @@ const toggleMenu = () => {
           </button>
         </div>
       </div>
+      </div>
     </div>
 
     <!-- Mobile menu, show/hide based on menu state -->
     <div
       id="mobile-menu"
       v-show="isMenuOpen"
-      class="md:hidden"
+      class="md:hidden bg-darkgray -top-5 h-100 z-49 absolute backdrop-blur-sm w-full"
     >
-      <div class=" ">
+      <div class="mx-4 mt-6 flex flex-col gap-10">
+        <div class="shrink-0">
+          <h1 class="text-3xl font-bold z-50">BRUNCH</h1>
+        </div>
         <a href="#" class=" font-bold">WELCOME</a>
         <a href="#" class=" font-bold">MENU</a>
         <a href="#" class=" font-bold">EVENTS</a>
