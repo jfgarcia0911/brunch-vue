@@ -27,8 +27,8 @@ export default {
       :style="{ backgroundImage: `url(/menu-list-bg.png)` }"
       class="flex bg-cover bg-center h-300 w-full items-center justify-center"
     >
-      <div class="bg-light opacity-80 w-270 h-258 grid grid-cols-4 auto-rows-fr place-items-center">
-        <div class="col-span-4">
+      <div class="bg-light opacity-80 w-270 h-258 grid grid-cols-2 md:grid-cols-4 auto-rows-fr place-items-center">
+        <div class="col-span-2 md:col-span-4">
           <h1 class="font-['Cookie'] text-darkgray text-[77px] leading-none text-center">India</h1>
           <h2 class="font-semibold text-[48px] leading-none text-center text-[#996600]">
             ON YOUR PLATE
@@ -39,29 +39,29 @@ export default {
           <img
             src="/tikka-chicken.png"
             alt="Tikka Chicken Dish"
-            class="w-67.5 h-64.5 object-cover"
+            class="w-30 h-30 md:w-67.5 md:h-64.5 object-cover"
           />
         </div>
         <div>
           <h1 class="text-center font-bold text-[18px]">TIKKA CHICKEN</h1>
-          <p class="text-center w-40 leading-none text-[16.7px] my-4">
+          <p class="text-center w-40 leading-none text-[16.7px] my-2 md:my-4">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do
           </p>
           <p class="text-center font-bold text-[16.15px]">$14.95</p>
         </div>
         <div>
-          <img src="/spicy-wedges.png" alt="Spicy Wedges Dish" class="w-67.5 h-64.5 object-cover" />
+          <img src="/spicy-wedges.png" alt="Spicy Wedges Dish" class="w-30 h-30 md:w-67.5 md:h-64.5 object-cover" />
         </div>
         <div>
           <h1 class="text-center font-bold text-[18px]">SPICY WEDGES</h1>
-          <p class="text-center w-40 leading-none text-[16.7px] my-4">
+          <p class="text-center w-40 leading-none text-[16.7px] my-2 md:my-4">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do
           </p>
           <p class="text-center font-bold text-[16.15px]">$10.95</p>
         </div>
         <div>
           <h1 class="text-center font-bold text-[18px]">CHICKEN CURRY</h1>
-          <p class="text-center w-40 leading-none text-[16.7px] my-4">
+          <p class="text-center w-40 leading-none text-[16.7px] my-2 md:my-4">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do
           </p>
           <p class="text-center font-bold text-[16.15px]">$14.95</p>
@@ -70,39 +70,39 @@ export default {
           <img
             src="/chicken-curry.png"
             alt="Chicken CUrry Dish"
-            class="w-67.5 h-64.5 object-cover"
+            class="w-30 h-30 md:w-67.5 md:h-64.5 object-cover"
           />
         </div>
         <div>
           <h1 class="text-center font-bold text-[18px]">RED CURRY</h1>
-          <p class="text-center w-40 leading-none text-[16.7px] my-4">
+          <p class="text-center w-40 leading-none text-[16.7px] my-2 md:my-4">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do
           </p>
           <p class="text-center font-bold text-[16.15px]">$18.95</p>
         </div>
         <div>
-          <img src="/red-curry.png" alt="Red Curry Dish" class="w-67.5 h-64.5 object-cover" />
+          <img src="/red-curry.png" alt="Red Curry Dish" class="w-30 h-30 md:w-67.5 md:h-64.5 object-cover" />
         </div>
         <div>
           <img
             src="/spicy-veggies.png"
             alt="Spicy Veggies Dish"
-            class="w-67.5 h-64.5 object-cover"
+            class="w-30 h-30 md:w-67.5 md:h-64.5 object-cover"
           />
         </div>
         <div>
           <h1 class="text-center font-bold text-[18px]">SPICY VEGGIES</h1>
-          <p class="text-center w-40 leading-none text-[16.7px] my-4">
+          <p class="text-center w-40 leading-none text-[16.7px] my-2 md:my-4">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do
           </p>
           <p class="text-center font-bold text-[16.15px]">$11.95</p>
         </div>
         <div>
-          <img src="/spicy-mix.png" alt="Spicy Mix Dish" class="w-67.5 h-64.5 object-cover" />
+          <img src="/spicy-mix.png" alt="Spicy Mix Dish" class="w-30 h-30 md:w-67.5 md:h-64.5 object-cover" />
         </div>
         <div>
           <h1 class="text-center font-bold text-[18px]">SPICY Mix</h1>
-          <p class="text-center w-40 leading-none text-[16.7px] my-4">
+          <p class="text-center w-40 leading-none text-[16.7px] my-2 md:my-4">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do
           </p>
           <p class="text-center font-bold text-[16.15px]">$11.95</p>
@@ -110,10 +110,10 @@ export default {
       </div>
     </div>
     <div class="h-100">
-      <div class="w-full h-full bg-light relative text-darkgray">
-        <div class="flex flex-col items-center">
-          <h1 class="font-bold text-[29.17px] mt-22 mb-6">Traditional cuisine made easy</h1>
-          <p class="w-170 text-[18.75px] text-center">
+      <div class="w-full h-full bg-light relative text-darkgray justify-center items-center flex flex-col">
+        <div class="flex flex-col items-center  ">
+          <h1 class="font-bold text-[29.17px]  mb-6">Traditional cuisine made easy</h1>
+          <p class="w-100 md:w-130 lg:w-170 text-[18.75px] text-center">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
           </p>
@@ -126,10 +126,10 @@ export default {
           <h1 v-for="(item, index) in titles" :key="index" class="text-[16.67px] font-bold">{{item.title}}</h1>
         </div>
         <div class="absolute top-0 left-0">
-          <img src="/left-flower.png" alt="Flower Design" />
+          <img src="/left-flower.png" alt="Flower Design" class="h-100 "/>
         </div>
         <div class="absolute top-0 right-0">
-          <img src="/right-flower.png" alt="Flower Design" />
+          <img src="/right-flower.png" alt="Flower Design"  class="h-100 "/>
         </div>
       </div>
     </div>
